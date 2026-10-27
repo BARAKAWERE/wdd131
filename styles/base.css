@@ -1,0 +1,120 @@
+:root {
+  --blue: #1f4e79;
+  --dark: #2f2f2f;
+  --text: #1c1c1c;
+  --border: #b8bcc2;
+  --yellow: #ffff99;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", Calibri, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: #fff;
+}
+
+header { background: var(--blue); color: #fff; }
+
+#course-title {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.4rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: var(--dark);
+  padding: 0 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat Alternates", sans-serif;
+  padding: 0.6rem 1rem;
+  border-bottom: 3px solid transparent;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background: #444;
+  border-bottom-color: var(--yellow);
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0 1.5rem;
+  align-items: start;
+}
+
+h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 2.2rem;
+  margin: 1.5rem 0;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card h2 {
+  margin: 0;
+  padding: 0.6rem;
+  background: var(--blue);
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.card-body { padding: 1rem 1.25rem; }
+.card-body::after { content: ""; display: block; clear: both; }
+
+.portrait { float: right; margin: 0 0 0.75rem 1rem; border: 1px solid var(--border); }
+
+.card h3 {
+  clear: both;
+  text-align: center;
+  margin: 1rem 2rem 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+figure { float: left; margin: 0 1rem 0.5rem 0; width: 140px; text-align: center; }
+figure img { border: 1px solid var(--border); }
+figcaption { font-size: 0.8rem; font-style: italic; }
+
+.card ul { margin: 0; padding-left: 1.25rem; }
+.card li { margin: 0.35rem 0; }
+.card a { color: #0b3d91; }
+
+footer {
+  background: var(--blue);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p { margin: 0.1rem 0; }
+#lastModified { color: var(--yellow); font-size: 0.85rem; }
+
+@media (max-width: 700px) {
+  main { grid-template-columns: 1fr; }
+  nav { flex-wrap: wrap; justify-content: center; padding: 0; }
+}
