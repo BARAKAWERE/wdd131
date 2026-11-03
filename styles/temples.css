@@ -1,0 +1,45 @@
+/* Mobile first */
+:root{
+  --navy:#12263f;
+  --navy-dark:#0b1829;
+  --gold:#d9b46a;
+  --cream:#f7f3ea;
+  --ink:#1f2937;
+  --white:#ffffff;
+  --radius:12px;
+  --heading:"Playfair Display",Georgia,serif;
+  --body:"Inter",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--body);background:var(--cream);color:var(--ink);line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
+img{display:block;max-width:100%;height:auto}
+
+/* Header + hamburger */
+header{background:var(--navy);color:var(--white);position:sticky;top:0;z-index:10}
+.header-bar{display:flex;justify-content:space-between;align-items:center;padding:12px 16px}
+.site-title{font-family:var(--heading);font-size:1.5rem;font-weight:700;color:var(--gold)}
+.menu-button{display:block;background:none;border:2px solid var(--gold);color:var(--gold);font-size:1.5rem;line-height:1;width:46px;height:46px;border-radius:8px;cursor:pointer;transition:background .25s,color .25s}
+.menu-button:hover,.menu-button:focus-visible{background:var(--gold);color:var(--navy)}
+
+/* Flex navigation */
+nav ul{list-style:none;display:none;flex-direction:column;background:var(--navy-dark)}
+nav ul.open{display:flex}
+nav a{display:block;padding:14px 20px;color:var(--white);text-decoration:none;font-weight:500;border-top:1px solid rgba(255,255,255,.12);transition:background .25s,color .25s,padding-left .25s}
+nav a:hover,nav a:focus-visible{background:var(--gold);color:var(--navy);padding-left:28px}
+nav a.active{color:var(--gold)}
+nav a.active:hover{color:var(--navy)}
+
+/* Main */
+main{width:100%;max-width:1100px;margin:0 auto;padding:24px 16px 40px;flex:1}
+h1{font-family:var(--heading);font-size:2rem;color:var(--navy);margin-bottom:20px;text-align:center}
+
+/* CSS Grid: one column on mobile */
+.gallery{display:grid;grid-template-columns:1fr;gap:20px}
+figure{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 18px rgba(18,38,63,.12);transition:transform .3s,box-shadow .3s}
+figure:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(18,38,63,.2)}
+figure img{width:100%;aspect-ratio:3/2;object-fit:cover}
+figcaption{padding:12px 16px;font-weight:600;text-align:center;color:var(--navy)}
+
+/* Footer */
+footer{background:var(--navy);color:var(--white);text-align:center;padding:20px 16px;font-size:.9rem}
+footer p+p{margin-top:4px;color:#cbd5e1}
