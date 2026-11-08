@@ -1,17 +1,19 @@
-/* Larger view (loaded at min-width: 700px) */
-.menu-button{display:none}
+/* Larger view: everything here applies at 700px and wider */
+@media (min-width: 700px) {
+  .menu-button { display: none; }
 
-header{display:flex;justify-content:space-between;align-items:center;padding:0 32px}
-.header-bar{padding:14px 0}
+  header { display: flex; justify-content: space-between; align-items: center; padding: 0 32px; }
+  .header-bar { padding: 14px 0; }
 
-nav ul{display:flex;flex-direction:row;background:none;gap:4px}
-nav a{border-top:none;padding:10px 16px;border-radius:8px}
-nav a:hover,nav a:focus-visible{padding-left:16px}
+  nav ul { display: flex; flex-direction: row; background: none; gap: 4px; }
+  nav a { border-top: none; padding: 10px 16px; border-radius: 8px; }
+  nav a:hover,
+  nav a:focus-visible { padding-left: 16px; }
 
-main{padding:36px 24px 56px}
-h1{font-size:2.6rem;margin-bottom:28px}
+  main { padding: 36px 24px 56px; }
+  h1 { font-size: 2.6rem; margin-bottom: 28px; }
 
-.gallery{grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px}
-figure:hover img{transform:scale(1.04)}
-figure img{transition:transform .5s}
-figure{overflow:hidden}
+  .gallery { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; }
+  figure img { transition: transform .5s; }
+  figure:hover img { transform: scale(1.04); }
+}
