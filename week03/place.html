@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Tanzania: facts, culture, and the current weather in Arusha, gateway to Kilimanjaro and the Serengeti.">
+    <title>Tanzania | Place Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tanzania</h1>
+    </header>
+
+    <main>
+        <picture class="hero">
+            <source media="(min-width: 700px)" srcset="images/tanzania-large.webp" type="image/webp" width="1200" height="500">
+            <img src="images/tanzania-small.jpeg" alt="Acacia tree on the Serengeti plains at sunset, Tanzania" width="600" height="400">
+        </picture>
+
+        <section class="data">
+            <h2>Tanzania Data</h2>
+            <ul>
+                <li><strong>Capital:</strong> Dodoma</li>
+                <li><strong>Largest City:</strong> Dar es Salaam</li>
+                <li><strong>Population:</strong> about 67 million</li>
+                <li><strong>Area:</strong> 945,087 km²</li>
+                <li><strong>Languages:</strong> Swahili, English</li>
+                <li><strong>Currency:</strong> Tanzanian shilling (TZS)</li>
+                <li><strong>Highest Point:</strong> Mount Kilimanjaro, 5,895 m</li>
+                <li><strong>Famous For:</strong> Serengeti, Zanzibar, Ngorongoro Crater</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img class="weather-icon" src="images/weather.jpeg" alt="Partly cloudy" width="48" height="48">
+            <ul>
+                <li><strong>Location:</strong> Arusha</li>
+                <li><strong>Temperature:</strong> <span id="temp">8</span> °C</li>
+                <li><strong>Conditions:</strong> Partly cloudy</li>
+                <li><strong>Wind:</strong> <span id="wind">12</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Baraka Shadrack Were | Tanzania</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
