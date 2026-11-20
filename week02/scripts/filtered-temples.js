@@ -23,21 +23,21 @@ const temples = [
     location: "Salt Lake City, Utah, United States",
     dedicated: "1893, April, 6",
     area: 253015,
-    imageUrl: "images/temple-placeholder.jpeg"
+    imageUrl: "images/temple-Salt-Lake.jpeg"
   },
   {
     templeName: "Kinshasa Democratic Republic of the Congo",
     location: "Kinshasa, Democratic Republic of the Congo",
     dedicated: "2019, April, 14",
     area: 12000,
-    imageUrl: "images/temple-placeholder.jpeg"
+    imageUrl: "images/temple-Kinshasa-Democratic-Republic-of-the-Congo.jpeg"
   },
   {
     templeName: "Rome Italy",
     location: "Rome, Italy",
     dedicated: "2019, March, 10",
     area: 41010,
-    imageUrl: "images/temple-placeholder.jpeg"
+    imageUrl: "images/temple-Rome-Italy.jpeg"
   }
 ];
 
